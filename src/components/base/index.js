@@ -89,8 +89,8 @@ BaseToast.propTypes = {
   leadingIconStyle: ViewPropTypes.style,
   trailingIconStyle: ViewPropTypes.style,
   contentContainerStyle: ViewPropTypes.style,
-  text1Style: TextStylePropTypes,
-  text2Style: TextStylePropTypes,
+  text1Style: PropTypes.object,
+  text2Style: PropTypes.object,
   activeOpacity: PropTypes.number
 };
 
@@ -108,8 +108,8 @@ BaseToast.defaultProps = {
   leadingIconStyle: undefined,
   trailingIconStyle: undefined,
   contentContainerStyle: undefined,
-  text1Style: () => {},
-  text2Style: () => {},
+  text1Style: {},
+  text2Style: {},
   activeOpacity: 0.8
 };
 
