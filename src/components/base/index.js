@@ -108,8 +108,8 @@ BaseToast.defaultProps = {
   leadingIconStyle: undefined,
   trailingIconStyle: undefined,
   contentContainerStyle: undefined,
-  text1Style: undefined,
-  text2Style: undefined,
+  text1Style: () => {},
+  text2Style: () => {},
   activeOpacity: 0.8
 };
 
